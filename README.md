@@ -27,3 +27,5 @@ about it at the start of each recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+- A good invariant could be that fib(0) = [0] and fib(1) = [0,1]. This works because in any case of n this is true: for n = 0 we will always return the array [0] and for n = 1 we return the array [0,1], and for any choice of n greater than these two values we will recursively fall back on these two facts to further compute fibonacci values of greater n's. 
